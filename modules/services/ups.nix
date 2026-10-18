@@ -38,7 +38,7 @@
       system = "cyberpower@localhost";
       powerValue = 1;
       user = "nut-admin";
-      passwordFile = "/etc/nixos/secrets/ups-passwd.txt";
+      passwordFile = "/home/mrxsloopy/nix-config/secrets/ups-passwd.txt";
       type = "primary";
     };
 
