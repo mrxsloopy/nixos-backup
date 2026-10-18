@@ -29,7 +29,7 @@
 
     # ─── upsd.users: admin upsmon ───
     users."nut-admin" = {
-      passwordFile = "/etc/nixos/secrets/ups-passwd.txt";
+      passwordFile = "/home/mrxsloopy/nix-config/secrets/ups-passwd.txt";
       upsmon = "primary";
     };
 
