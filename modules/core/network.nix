@@ -1,4 +1,4 @@
-{ ... };
+{ ... }:
 
 {
   networking.hostName = "server01";
