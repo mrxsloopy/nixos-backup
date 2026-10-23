@@ -1,6 +1,8 @@
+{ ... };
+
 {
   imports = [
-    #./audio.nix
+    ./tailscale.nix
     ./ups.nix
   ];
 }

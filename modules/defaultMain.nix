@@ -2,11 +2,11 @@
 
 {
   imports = [
-    #./core
-    #./security
+    ./core
+    ./security
     #./dev
     #./devopsCICD
-    #./packages
+    ./packages
     ./services
     #./mics
   ];
