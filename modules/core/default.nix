@@ -5,7 +5,7 @@
     ./boot.nix
     ./network.nix
     ./locale.nix
-  ]
+  ];
   # flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
