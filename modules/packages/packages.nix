@@ -12,5 +12,16 @@
     helix
     eza
     tmux
+    curl
+    nmap
+    tcpdump
+    ripgrep
+    zip
+    unzip
+    ncdu
+    iotop
+    dig
+    rsync
+    openssl
   ];
 }
