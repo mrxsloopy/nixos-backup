@@ -9,5 +9,14 @@
     btop
     fastfetch
     bat
+    helix
+    rust-analyzer
+    basedpyright
+    ruff
+    nil
+    rustfmt
+    eza
+    pyright
+    tmux
   ];
 }
