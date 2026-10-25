@@ -6,7 +6,7 @@
     database.type = "sqlite3";
     lfs.enable = true;
 
-    setting = {
+    settings = {
       server = {
         DOMAIN = "server-main.tail4c783b.ts.net";
         ROOT_URL = "https://server-main.tail4c783b.ts.net/forgejo/";
@@ -33,7 +33,7 @@
       other = {
         SHOW_FOOTER_VERSION = false;
         SHOW_FOOTER_TEMPLATE = false;
-      }
+      };
     };
   };
 }
