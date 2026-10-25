@@ -11,7 +11,7 @@
       ROCKET_PORT = "8222";
       ROCKET_LOG = "critical";
 
-      DOMAIN = "vault.mrxsloopy.xyz";
+      #DOMAIN = "vault.mrxsloopy.xyz";
       SIGNUPS_ALLOWED = false;
       INVITATIONS_ALLOWED = true;
 
