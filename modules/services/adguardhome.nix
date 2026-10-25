@@ -3,7 +3,7 @@
 {
   services.adguardhome = {
     enable = true;
-    #allowDHCP = true;  # control DHCP
+    # allowDHCP = true;
 
     settings = {
       bind_port = 53;
@@ -16,7 +16,7 @@
       users = [
         {
           name = "mrxsloopy";
-          password = "$2b$05$8rbQmj3v.OxmIhW6wiS7Ref0w0t9gqptjIfNFY4oTKhTnLa4f87Qa";
+          password = "ТВОЙ_BCRYPT_ХЭШ";
         }
       ];
 
@@ -31,27 +31,30 @@
         "8.8.8.8"
       ];
 
-      filters = [
-        {
-          name = "AdGuard Base";
-          url = "https://adguardteam.github.io/HostFiltersRegistryFilters/filter_1.txt";
-          id = 1;
-        }
-        {
-          name = "AdGuard Tracking";
-          url = "https://adguardteam.github.io/HostFiltersRegistryFilters/filter_25.txt";
-          id = 2;
-        }
-        {
-          name = "Dan Pollock";
-          url = "https://someonewhocares.org/hosts/hosts";
-          id = 3;
-        }
-      ];
-
       filtering = {
         protection_enabled = true;
         filtering_enabled = true;
+
+        filters = [
+          {
+            enabled = true;
+            name = "AdGuard Base";
+            url = "https://adguardteam.github.io/HostFiltersRegistryFilters/filter_1.txt";
+            id = 1;
+          }
+          {
+            enabled = true;
+            name = "AdGuard Tracking";
+            url = "https://adguardteam.github.io/HostFiltersRegistryFilters/filter_25.txt";
+            id = 2;
+          }
+          {
+            enabled = true;
+            name = "Dan Pollock";
+            url = "https://someonewhocares.org/hosts/hosts";
+            id = 3;
+          }
+        ];
       };
     };
   };
