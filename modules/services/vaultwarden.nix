@@ -5,9 +5,9 @@
     enable = true;
     dbBackend = "sqlite";
     #environmentFile = "/var/lib/vaultwarden/vaultwarden.env";
-    ADMIN_TOKEN = ''$argon2id$v=19$m=65540,t=3,p=4$8uuF2nYp6eEbzl9vt5NnN+zI6yCpBRDDUZ3WTr8lAgk$mOBXQ3te3iYnJq9tc0FzYyGfykQg+cZeYDie3qyDBPw''
-
+    
     config = {
+      ADMIN_TOKEN = ''$argon2id$v=19$m=65540,t=3,p=4$8uuF2nYp6eEbzl9vt5NnN+zI6yCpBRDDUZ3WTr8lAgk$mOBXQ3te3iYnJq9tc0FzYyGfykQg+cZeYDie3qyDBPw'';   
       ROCKET_ADDRES = "127.0.0.1";
       ROCKET_PORT = "8222";
       ROCKET_LOG = "critical";
