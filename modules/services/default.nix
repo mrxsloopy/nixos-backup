@@ -6,5 +6,6 @@
     ./ups.nix
     ./vaultwarden.nix
     ./caddy.nix
+    ./forgejo.nix
   ];
 }
