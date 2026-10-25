@@ -10,10 +10,9 @@
         reverse_proxy 127.0.0.1:8222
       }
 
-      handle /forgejo* {
+      handle_path /forgejo* {
         reverse_proxy 127.0.0.1:3000
       }
-      
     '';
   };
 }
