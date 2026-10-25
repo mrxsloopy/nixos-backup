@@ -13,6 +13,13 @@
         address = "0.0.0.0:3001";
       };
 
+      users = [
+        {
+          name = "mrxsloopy";
+          password = "$2b$05$8rbQmj3v.OxmIhW6wiS7Ref0w0t9gqptjIfNFY4oTKhTnLa4f87Qa";
+        }
+      ];
+
       upstream_dns = [
         "1.1.1.1"
         "8.8.8.8"
