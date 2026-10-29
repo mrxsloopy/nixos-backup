@@ -16,7 +16,7 @@
       users = [
         {
           name = "mrxsloopy";
-          password = "ТВОЙ_BCRYPT_ХЭШ";
+          password = "$2b$05$VRHHE.ocOm2j.F6fNbXM4.YNNsCdCTiwVY5P4ZQKCW2Y08/VPOsSC";
         }
       ];
 
