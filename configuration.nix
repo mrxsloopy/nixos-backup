@@ -4,7 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ./modules/defaultMain.nix
-    ./secrets.nix
+    #./secrets.nix
   ];
 
   system.stateVersion = "26.05";
