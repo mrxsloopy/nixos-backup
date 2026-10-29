@@ -4,8 +4,9 @@
   imports = [
     ./hardware-configuration.nix
     ./modules/defaultMain.nix
-    #./secrets.nix
   ];
+
+  age.identityPaths = [ "/var/lib/age-server-key.txt" ];
 
   system.stateVersion = "26.05";
 }

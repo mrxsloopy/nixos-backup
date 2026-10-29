@@ -1,5 +1,5 @@
 let
-  server01 = "age1pf5ymp03340kwypzf7vkjxlf80xhukudae3sc734mnzj5eu6u5esfz0jkq";
+  server01 = "age1p5l788w705jrq7g5a4r9924fdgu902jmmsvk84lfx6t42c6zepzq5hqj74";
   mrxsloopy = "age157jcmayegz62553zmduax05rhlxvutd2m0jh9sqhz53xp0q083pqzt0aml";
 in
 {
