@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  age.secrets."ups-passwd".file = ../../secrets/ups-passwd.age;
+
   power.ups = {
     enable = true;
     mode = "standalone";  # soon "netserver"
@@ -29,7 +31,7 @@
 
     # ─── upsd.users: admin upsmon ───
     users."nut-admin" = {
-      passwordFile = "/home/mrxsloopy/nix-config/secrets/ups-passwd.txt";
+      passwordFile = config.age.secrets."ups-passwd".path;
       upsmon = "primary";
     };
 
@@ -38,7 +40,7 @@
       system = "cyberpower@localhost";
       powerValue = 1;
       user = "nut-admin";
-      passwordFile = "/home/mrxsloopy/nix-config/secrets/ups-passwd.txt";
+      passwordFile = config.age.secrets."ups-passwd".path;
       type = "primary";
     };
 
